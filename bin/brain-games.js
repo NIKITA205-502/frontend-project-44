@@ -2,4 +2,3 @@
 import sayGreetings from '../src/cli.js';
 
 sayGreetings();
-
