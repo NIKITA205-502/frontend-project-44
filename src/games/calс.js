@@ -1,4 +1,4 @@
-import startGame from '../gameLogic.js';
+import startGame from '../index.js';
 import genRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
