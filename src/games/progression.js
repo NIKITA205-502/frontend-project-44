@@ -1,5 +1,5 @@
 import runGameLogic from '../index.js';
-import getRandomInt from '../utils.js';
+import genRandomNumber from '../utils.js';
 
 const gameTask = 'What number is missing in the progression?';
 
@@ -13,10 +13,10 @@ const getProgression = (start, step, length) => {
 };
 
 const theGame = () => {
-  const start = getRandomInt(1, 15);
-  const step = getRandomInt(1, 7);
-  const length = getRandomInt(5, 10);
-  const randomHiddenIndex = getRandomInt(0, length - 1);
+  const start = genRandomNumber(1, 15);
+  const step = genRandomNumber(1, 7);
+  const length = genRandomNumber(5, 10);
+  const randomHiddenIndex = genRandomNumber(0, length - 1);
   const progression = getProgression(start, step, length);
   const hiddenIndex = progression.splice(randomHiddenIndex, 1, '..');
   const question = progression.join(' ');
