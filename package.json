@@ -16,6 +16,10 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NIKITA205-502/frontend-project-44.git"
+  },
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
